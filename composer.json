@@ -1,0 +1,26 @@
+{
+  "name": "magerubik/module-ajax-layered-navigation",
+  "description": "Magento 2 Ajax Layered Navigation Extension",
+  "require": {
+    "magerubik/module-core": "^1.4.12"
+  },
+  "type": "magento2-module",
+  "version": "4.0.5",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Magerubik",
+      "email": "support@magerubik.com",
+      "homepage": "https://www.magerubik.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Magerubik\\AjaxLayer\\": ""
+    }
+  }
+}

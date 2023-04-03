@@ -1,0 +1,13 @@
+<?xml version="1.0"?><!--
+/**
+ * Copyright © 2021 magerubik.com. All rights reserved.
+ * @author Magerubik Team <info@magerubik.com>
+ * @package Magerubik_AjaxLayer
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogSearch\Controller\Result\Index" type="Magerubik\AjaxLayer\Controller\Search\Result\Index"/>
+    <type name="Magento\Catalog\Controller\Category\View">
+        <plugin name="ajax_layer_navigation" type="Magerubik\AjaxLayer\Plugin\Controller\Category\View" sortOrder="1"/>
+    </type>
+</config>
